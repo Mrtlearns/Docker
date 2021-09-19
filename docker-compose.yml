@@ -98,8 +98,8 @@ services:
       - $DOCKERDIR/traefik2/acme/acme.json:/acme.json # cert location - you must touch this file and change permissions to 600
       - $DOCKERDIR/traefik2/traefik.log:/traefik.log # for fail2ban - make sure to touch file before starting container
     environment:
-      - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
-      - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+      - AWS_ACCESS_KEY_ID=$AK
+      - AWS_SECRET_ACCESS_KEY=$ASK
       - HTPASSWD_FILE=/run/secrets/htpasswd # HTPASSWD_FILE can be whatever as it is not used/called anywhere.
     labels:
       - "com.centurylinklabs.watchtower.enable=true"

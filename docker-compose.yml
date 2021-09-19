@@ -31,7 +31,7 @@ services:
   # touch $DOCKERDIR/traefik2/traefik.log
   traefik:
     container_name: traefik
-    image: traefik:2.5.1 # picodon v2.3.x # chevrotin v2.2.x
+    image: traefik:latest # picodon v2.3.x # chevrotin v2.2.x
     restart: always
     command: # CLI arguments
       - --global.checkNewVersion=true

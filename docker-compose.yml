@@ -431,8 +431,8 @@ services:
       container_name: R53DDNS
       restart: unless-stopped
       environment:
-          - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
-          - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+          - AWS_ACCESS_KEY_ID=$AK
+          - AWS_SECRET_ACCESS_KEY=$ASK
           - AWS_REGION=$AWS_REGION
           - ROUTE53_HOSTED_ZONE_ID=$ROUTE53_HOSTED_ZONE_ID
           - ROUTE53_DOMAIN=$DOMAINNAME
